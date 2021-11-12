@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    
+    <!-- bước 1 làm giao diện -->
+    <form action="">
+        <h1>Tính tỉ giá</h1>
+        <input type="text" id="dau_vao1" value="0" >
+        <input type="text" id="dau_vao2" value="0">
+        <br><br>
+        <button onclick="cong()">+</button> 
+        <button onclick="tru()">-</button>
+        <button onclick="nhan()">*</button>
+        <button onclick="chia()">/</button>
+
+        <br><br>
+        <input type="text" id="kq" value="">
+        
+    </form>
+
+    <script>
+        function cong() {
+            let a = document.getElementById('dau_vao1');
+            let b = document.getElementById('dau_vao2');
+            let tong = a.value + b.value ;
+            document.getElementById('kq').value = tong ;
+            
+        }
+    </script>
+
+</body>
+    
+</html>
